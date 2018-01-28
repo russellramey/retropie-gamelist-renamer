@@ -5,7 +5,7 @@ $directory = $argv[2];
 
 // Scan set directory
 $files = scandir($directory);
-// Empty $gam
+// Empty gamelist to start
 $gamelist = '';
 foreach($files as $game){ 
 
