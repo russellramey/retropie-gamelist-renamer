@@ -1,0 +1,30 @@
+<game>
+						<path>./.</path>
+						<name>.</name>
+						<image>./boxart/..png</image>
+					</game> 
+<game>
+						<path>./..</path>
+						<name>..</name>
+						<image>./boxart/...png</image>
+					</game> 
+<game>
+						<path>./.DS_Store</path>
+						<name>.DS_Store</name>
+						<image>./boxart/.DS_Store.png</image>
+					</game> 
+<game>
+						<path>./game one.txt</path>
+						<name>game one</name>
+						<image>./boxart/game one.png</image>
+					</game> 
+<game>
+						<path>./game three.txt</path>
+						<name>game three</name>
+						<image>./boxart/game three.png</image>
+					</game> 
+<game>
+						<path>./game two.txt</path>
+						<name>game two</name>
+						<image>./boxart/game two.png</image>
+					</game> 
