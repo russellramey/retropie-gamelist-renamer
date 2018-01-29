@@ -2,6 +2,7 @@
 // Get parameters 
 $filetype = $argv[1];
 $directory = $argv[2];
+$output = $argv[3];
 
 // Scan set directory
 $files = scandir($directory);
@@ -24,11 +25,15 @@ foreach($files as $game){
 
 	// Add xml string to main output
 	$gamelist .= $gamelist_item;
-	
+
+	// Print feedback to terminal
+	print($filename . "\n");
 }
 
-// Out put new xml file
-file_put_contents('gamelist.xml', $gamelist);
+// Output success message
+print("DONE!");
+// Write contents to xml file
+file_put_contents($output . 'gamelist.xml', $gamelist);
 ?>
 
 

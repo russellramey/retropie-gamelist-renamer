@@ -1,9 +1,15 @@
 # Get parameters 
-filetype = ARGV[1];
-directory = ARGV[2];
+filetype = ARGV[0]
+directory = ARGV[1]
+output = ARGV[2]
+
+# if now output directory
+unless ARGV[2]
+	output = ""
+end
 
 # Scan set directory
-files = Dir.new("/Users/sg0222254/Desktop/test roms");
+files = Dir.new(directory);
 # Empty gamelist to start
 gamelist = ''
 
@@ -11,7 +17,7 @@ gamelist = ''
 files.each do | game |
 
 	# Remove file extension
-	filename = game.gsub('.txt', '')
+	filename = game.gsub(filetype, '')
 
 	# Remove all meta contained in ()
 	game_title = filename.gsub('/\([^)]+\)/', '');
@@ -25,9 +31,15 @@ files.each do | game |
 
 	# Add xml string to main output
 	gamelist += gamelist_item
+
+	# Give feedback to terminal
+	print filename + "\n"
 	
 end
 
+# Print success message
+print 'DONE!' + "\n"
+
 # Out put new xml file
-File.write('gamelist.xml', gamelist)
+File.write(output + 'gamelist.xml', gamelist)
 
