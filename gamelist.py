@@ -4,7 +4,12 @@ import sys, os, re
 # Get parameters
 filetype = sys.argv[1]
 directory = sys.argv[2]
-output = sys.argv[3]
+
+# check if output dir is given
+if sys.argv[3:]:
+   output = sys.argv[3]
+else:
+	output = ''
 
 # Empty gamelist to start
 gamelist = ''
