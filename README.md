@@ -14,7 +14,7 @@ This script will scan a directory of emulator roms, remove region labels and cle
 ```
 	python gamelist.py .zip /path/to/directory/of/roms
 ```
-	- *Parameters*:
-		- filetype, the file type of the roms you are looking for
-		- direcotry, location of the roms you want to scan
-		- output (optional), locaiton of where you want to save the gamelist.xml file
+*Parameter Options*:
+- filetype, the file type of the roms you are looking for
+- direcotry, location of the roms you want to scan
+- output (optional), locaiton of where you want to save the gamelist.xml file
