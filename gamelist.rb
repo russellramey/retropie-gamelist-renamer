@@ -20,7 +20,7 @@ files.each do | game |
 	filename = game.gsub(filetype, '')
 
 	# Remove all meta contained in ()
-	game_title = filename.gsub('/\([^)]+\)/', '');
+	game_title = filename.gsub(/\([^)]+\)/, '')
 
 	# Generate XML for each element
 	gamelist_item = "<game>
